@@ -2,7 +2,11 @@ package edu.pingpong.domain.transport;
 
 public class Bicicleta implements Movil{
     
-    private final int id = 0;
+    private final int id;
+
+    Bicicleta(int id) {
+        this.id = id;
+    }
 
     /*
     Al ser un método implementado por una interfaz,

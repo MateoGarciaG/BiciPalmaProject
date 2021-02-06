@@ -1,6 +1,6 @@
 package edu.pingpong.domain.tarjetausuario;
 
-public class TarjetaUsuario {
+public class TarjetaUsuario implements Autenticacion{
     
     private final String id;
     private boolean activada;
@@ -10,6 +10,7 @@ public class TarjetaUsuario {
         this.activada = activada;
     }
 
+    @Override
     public boolean isActivada() {
         return this.activada;
     }

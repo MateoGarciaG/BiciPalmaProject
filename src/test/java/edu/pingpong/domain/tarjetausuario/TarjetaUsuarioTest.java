@@ -2,7 +2,6 @@ package edu.pingpong.domain.tarjetausuario;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -41,7 +40,7 @@ public class TarjetaUsuarioTest {
 
     @Test
     public void toStringTest() {
-        assertEquals("El resultado del método ToString del Objeto TarjetaUsuario no es igual al esperado", "id: 1\nactivada: true", this.tarjeta.toString());
+        assertEquals("El resultado del método ToString del Objeto TarjetaUsuario no es igual al esperado", "id: 1\nactivada: false", this.tarjeta.toString());
     }
 
 }

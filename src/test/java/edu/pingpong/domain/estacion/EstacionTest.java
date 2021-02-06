@@ -9,9 +9,6 @@ import org.junit.Test;
 
 public class EstacionTest {
     
-    /*
-    Casos test Setup Estacion
-    */
     @Test
     public void shouldAnswerWithTrue()
     {

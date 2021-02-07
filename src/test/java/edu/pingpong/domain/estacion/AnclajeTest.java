@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 import edu.pingpong.domain.transport.Bicicleta;
+import edu.pingpong.domain.transport.Movil;
 
 public class AnclajeTest {
     
@@ -61,6 +62,9 @@ public class AnclajeTest {
     @Test
     public void toStringTest() {
 
-        assertEquals("El resultado no es igual al esperado", "ocupado: false\nbici: id: 1", this.anclaje.toString());
+        this.anclaje.anclarBici(this.bicicleta);
+        assertEquals("El resultado no es igual al esperado", "ocupado: true\nBici: id: 1", this.anclaje.toString());
+
+        
     }
 }

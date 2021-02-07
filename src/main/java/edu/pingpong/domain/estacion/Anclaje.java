@@ -1,7 +1,5 @@
 package edu.pingpong.domain.estacion;
-
-import edu.pingpong.bicipalma.BiciPalma;
-import edu.pingpong.domain.transport.Bicicleta;
+import edu.pingpong.domain.transport.Movil;
 
 public class Anclaje {
     
@@ -16,6 +14,9 @@ public class Anclaje {
         } else {
             this.ocupado = false;
         }
+
+        return this.ocupado;
+
     }
 
     Movil getBici() {
@@ -23,15 +24,17 @@ public class Anclaje {
     }
 
     void anclarBici(Movil bicicleta) {
-        this.getBici() = bicicleta;
+        this.bici = bicicleta;
     }
 
     void liberarBici() {
-        this.getBici() = null;
+        this.bici = null;
     }
 
     @Override
     public String toString() {
-        return "ocupado: " + this.isOcupado() + "\n" + this.bici.toString();
+
+        return "ocupado: " + this.isOcupado() + "\n" + "Bici: " + this.bici.toString();
+
     }
 }

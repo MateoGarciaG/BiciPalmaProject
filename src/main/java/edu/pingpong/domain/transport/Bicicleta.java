@@ -4,7 +4,7 @@ public class Bicicleta implements Movil{
     
     private final int id;
 
-    Bicicleta(int id) {
+    public Bicicleta(int id) {
         this.id = id;
     }
 

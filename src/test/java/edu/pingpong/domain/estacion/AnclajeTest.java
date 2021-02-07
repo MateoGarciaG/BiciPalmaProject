@@ -63,8 +63,10 @@ public class AnclajeTest {
     public void toStringTest() {
 
         this.anclaje.anclarBici(this.bicicleta);
-        assertEquals("El resultado no es igual al esperado", "ocupado: true\nBici: id: 1", this.anclaje.toString());
+        assertEquals("El resultado del método ToString del objeto Anclaje no es igual al esperado", "ocupado: true\nBici: id: 1", this.anclaje.toString());
 
-        
+        this.anclaje.liberarBici();
+
+        assertEquals("El resultado del método ToString del objeto Anclaje no es igual al esperado", "ocupado: false\nBici: null", this.anclaje.toString());
     }
 }

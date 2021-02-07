@@ -61,6 +61,6 @@ public class AnclajeTest {
     @Test
     public void toStringTest() {
 
-        assertEquals("El resultado no es igual al esperado", "ocupado: false\nbici:\nid: 1", this.anclaje.toString());
+        assertEquals("El resultado no es igual al esperado", "ocupado: false\nbici: id: 1", this.anclaje.toString());
     }
 }

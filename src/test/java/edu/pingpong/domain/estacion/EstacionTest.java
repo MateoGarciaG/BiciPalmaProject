@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.*;
 
+import edu.pingpong.domain.tarjetausuario.Autenticacion;
+import edu.pingpong.domain.tarjetausuario.TarjetaUsuario;
 import edu.pingpong.domain.transport.Bicicleta;
 import edu.pingpong.domain.transport.Movil;
 
@@ -17,7 +19,7 @@ public class EstacionTest {
     public void setupEstacion() {
         this.estacion = new Estacion(1, "Manacor", 6);
         this.bicicleta = new Bicicleta(1);
-        this.tarjetaUsuario = new TarjetaUsuario(1,true);
+        this.tarjetaUsuario = new TarjetaUsuario("1",true);
     }
 
     @Test

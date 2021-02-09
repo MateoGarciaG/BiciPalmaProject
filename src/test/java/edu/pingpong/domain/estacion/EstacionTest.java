@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.*;
 
+import edu.pingpong.domain.tarjetausuario.Autenticacion;
+import edu.pingpong.domain.tarjetausuario.TarjetaUsuario;
 import edu.pingpong.domain.transport.Bicicleta;
 import edu.pingpong.domain.transport.Movil;
 
@@ -11,14 +13,16 @@ public class EstacionTest {
 
     private Estacion estacion = null;
     private Movil bicicleta = null;
-    private Autenticacion tarjetaUsuario = null;
+    private TarjetaUsuario tarjetaUsuario = null;
     
     @Before
     public void setupEstacion() {
         this.estacion = new Estacion(1, "Manacor", 6);
         this.bicicleta = new Bicicleta(1);
-        this.tarjetaUsuario = new TarjetaUsuario(1,true);
+        this.tarjetaUsuario = new TarjetaUsuario("1",true);
     }
+
+    // Métodos: anclajes(), numAnclajes() no se testean ya que son privados
 
     @Test
     public void constructorEstacion() {
@@ -42,6 +46,8 @@ public class EstacionTest {
     @Test
     public void leerTarjetaUsuarioTest() {
 
+        this.tarjetaUsuario.setActivada(false);
+
         assertEquals("No se pudo leer la Tarjeta de usuario", false, this.estacion.leerTarjetaUsuario(this.tarjetaUsuario));
 
         this.tarjetaUsuario.setActivada(true);
@@ -53,6 +59,9 @@ public class EstacionTest {
     @Test
     public void retirarBicicletaTest() {
 
+        // Anclar una bicicleta
+        this.estacion.anclarBicicleta(this.bicicleta);
+        // Retirar una bicicleta
         this.estacion.retirarBicicleta(this.tarjetaUsuario);
 
         assertEquals("El resultado no es igual al esperado", 6, this.estacion.anclajesLibres());
@@ -67,9 +76,10 @@ public class EstacionTest {
         assertEquals("El resultado no es igual al esperado", 5, this.estacion.anclajesLibres());
     }
 
-    @Test void toStringTest() {
+    @Test 
+    public void toStringTest() {
 
-        assertEquals("El resultado no es igual al resultado esperado", "id: 1\n direccion: Manacor\nnumeroAnclajes: 6", this.estacion.toString());
+        assertEquals("El resultado no es igual al resultado esperado", "id: 1\ndireccion: Manacor\nnumeroAnclajes: 6", this.estacion.toString());
     }
 
 }

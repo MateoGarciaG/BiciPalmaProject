@@ -1,5 +1,9 @@
 package edu.pingpong.bicipalma;
 
+import java.util.Arrays;
+
+import edu.pingpong.domain.estacion.Anclaje;
+
 /**
  * Hello world!
  *
@@ -8,6 +12,8 @@ public class BiciPalma
 {
     public static void main( String[] args )
     {
+
+
         // Estacion estacion = new Estacion(1, "Manacor", 6);
 
 		// /**

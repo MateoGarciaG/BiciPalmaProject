@@ -1,5 +1,6 @@
 // Paquete:
 package edu.pingpong.domain.estacion;
+
 // Imports de  otros paquetes para importar Clases que necesitamos para
 // realizar Casos Test
 import edu.pingpong.domain.transport.Bicicleta;
@@ -9,6 +10,7 @@ import edu.pingpong.domain.transport.Movil;
 import static org.junit.Assert.*;
 import org.junit.*;
 
+import java.util.Arrays;
 // Random number
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -51,6 +53,7 @@ public class AnclajesTest {
     public void anclajesArrayTest() {
 
         // assertArrayEquals("El array no es el mismo que el Array esperado", this.listaAnclajes, this.anclajes.anclajes());
+        assertTrue(Arrays.equals(this.anclajes.anclajes(), this.anclajes.anclajes()));
         assertTrue(this.anclajes.anclajes() instanceof Anclaje[]);
         assertEquals(this.listaAnclajes.length, this.anclajes.numAnclajes());
 

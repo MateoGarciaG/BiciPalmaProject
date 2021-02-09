@@ -1,5 +1,6 @@
 package edu.pingpong.domain.estacion;
 
+import edu.pingpong.domain.tarjetausuario.Autenticacion;
 import edu.pingpong.domain.transport.Movil;
 
 public class Estacion {

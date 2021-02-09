@@ -42,6 +42,10 @@ public class EstacionTest {
     @Test
     public void leerTarjetaUsuarioTest() {
 
+        assertEquals("No se pudo leer la Tarjeta de usuario", false, this.estacion.leerTarjetaUsuario(this.tarjetaUsuario));
+
+        this.tarjetaUsuario.setActivada(true);
+
         assertEquals("No se pudo leer la Tarjeta de usuario", true, this.estacion.leerTarjetaUsuario(this.tarjetaUsuario));
     }
 
@@ -52,11 +56,20 @@ public class EstacionTest {
         this.estacion.retirarBicicleta(this.tarjetaUsuario);
 
         assertEquals("El resultado no es igual al esperado", 6, this.estacion.anclajesLibres());
+
+        // Anclar dos bicicletas
+        this.estacion.anclarBicicleta(this.bicicleta);
+        this.estacion.anclarBicicleta(this.bicicleta);
+
+        // Retirar una, por lo cual tendriamos 5 anclajes libres, ya que 1 anclaje aún está ocupado
+        this.estacion.retirarBicicleta(this.tarjetaUsuario);
+
+        assertEquals("El resultado no es igual al esperado", 5, this.estacion.anclajesLibres());
     }
 
     @Test void toStringTest() {
 
-        assertEquals("El resultado no es igual al resultado esperado", "Estacion: id: 1 direccion: Manacor\nAnclajes: Numero de Anclajes: 6\nCada Anclaje: ocupado: false\nBici: null", this.estacion.toString());
+        assertEquals("El resultado no es igual al resultado esperado", "id: 1\n direccion: Manacor\nnumeroAnclajes: 6", this.estacion.toString());
     }
 
 }

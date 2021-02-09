@@ -34,7 +34,8 @@ public class Anclaje {
     @Override
     public String toString() {
 
-        return "ocupado: " + this.isOcupado() + "\n" + "Bici: " + this.bici.toString();
+        String bicicleta = (this.bici == null) ? "null" : this.getBici().toString();
+        return "ocupado: " + this.isOcupado() + "\n" + "Bici: " + bicicleta;
 
     }
 }

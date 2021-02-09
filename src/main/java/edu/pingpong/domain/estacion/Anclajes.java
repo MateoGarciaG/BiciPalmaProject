@@ -49,7 +49,7 @@ public class Anclajes {
 
     @Override
     public String toString() {
-        return "Número de Anclajes: " + Integer.toString(this.numAnclajes());
+        return "Numero de Anclajes: " + Integer.toString(this.numAnclajes());
     }
 
 

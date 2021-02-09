@@ -52,6 +52,7 @@ public class AnclajesTest {
 
         // assertArrayEquals("El array no es el mismo que el Array esperado", this.listaAnclajes, this.anclajes.anclajes());
         assertTrue(this.anclajes.anclajes() instanceof Anclaje[]);
+        assertEquals(this.listaAnclajes.length, this.anclajes.numAnclajes());
 
 
     }
@@ -119,6 +120,6 @@ public class AnclajesTest {
     @Test
     public void toStringTest() {
 
-        assertEquals("El resultado no es igual al resultado esperado", "Número de Anclajes: 6", this.anclajes.toString());
+        assertEquals("El resultado no es igual al resultado esperado", "Numero de Anclajes: 6", this.anclajes.toString());
     }
 }

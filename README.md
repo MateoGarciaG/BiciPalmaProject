@@ -5,11 +5,11 @@ Bicipalma FP Dual DAW Project, This Project is about to build a prototype of the
 
 <!--Logos-->
 
-![Project Logo Java](https://github.com/MateoGarciaG/BiciPalmaProject/doc/img/java.png)
+![Project Logo Java](https://github.com/MateoGarciaG/BiciPalmaProject/Doc/img/java.png)
 
-![Project Logo Maven](https://github.com/MateoGarciaG/BiciPalmaProject/doc/img/apache_maven.png)
+![Project Logo Maven](https://github.com/MateoGarciaG/BiciPalmaProject/Doc/img/apache_maven.png)
 
-![Project Logo Borja Moll](https://github.com/MateoGarciaG/BiciPalmaProject/doc/img/logocifp.png)
+![Project Logo Borja Moll](https://github.com/MateoGarciaG/BiciPalmaProject/Doc/img/logocifp.png)
 
 ## Tabla de Contenidos
 
@@ -21,7 +21,7 @@ Bicipalma FP Dual DAW Project, This Project is about to build a prototype of the
 ---
 
 ## Salida de mi Aplicación
-![Project Salida Aplicacion](https://github.com/MateoGarciaG/BiciPalmaProject/doc/salida_consola.JPG)
+![Project Salida Aplicacion](https://github.com/MateoGarciaG/BiciPalmaProject/Doc/salida_consola.JPG)
 
 **[⬆ back to top](#tabla-de-contenidos)**
 
@@ -29,7 +29,7 @@ Bicipalma FP Dual DAW Project, This Project is about to build a prototype of the
 ---
 
 ## Diagrama UML
-![Project UML Diagram](https://github.com/MateoGarciaG/BiciPalmaProject/doc/diagrama_clases_UML.png)
+![Project UML Diagram](https://github.com/MateoGarciaG/BiciPalmaProject/Doc/diagrama_clases_UML.png)
 
 **[⬆ back to top](#tabla-de-contenidos)**
 
@@ -56,7 +56,7 @@ MIT License
 Copyright (c) 2021 Mateo Garcia Gonzalez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
+of this software and associated Documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -64,15 +64,6 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
 
 
 **[⬆ back to top](#tabla-de-contenidos)**

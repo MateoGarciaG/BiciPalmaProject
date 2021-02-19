@@ -5,11 +5,11 @@ Bicipalma FP Dual DAW Project, This Project is about to build a prototype of the
 
 <!--Logos-->
 
-![Project Logo Java](https://github.com/MateoGarciaG/BiciPalmaProject/doc/img/java.png)
+![Project Logo Java](./doc/img/java.png)
 
-![Project Logo Maven](https://github.com/MateoGarciaG/BiciPalmaProject/doc/img/apache_maven.png)
+![Project Logo Maven](./doc/img/apache_maven.png)
 
-![Project Logo Borja Moll](https://github.com/MateoGarciaG/BiciPalmaProject/doc/img/logocifp.png)
+![Project Logo Borja Moll](./doc/img/logocifp.png)
 
 ## Tabla de Contenidos
 
@@ -21,7 +21,7 @@ Bicipalma FP Dual DAW Project, This Project is about to build a prototype of the
 ---
 
 ## Salida de mi Aplicación
-![Project Salida Aplicacion](https://github.com/MateoGarciaG/BiciPalmaProject/doc/salida_consola.JPG)
+![Project Salida Aplicacion](./doc/salida_consola.JPG)
 
 **[⬆ back to top](#tabla-de-contenidos)**
 
@@ -29,7 +29,7 @@ Bicipalma FP Dual DAW Project, This Project is about to build a prototype of the
 ---
 
 ## Diagrama UML
-![Project UML Diagram](https://github.com/MateoGarciaG/BiciPalmaProject/doc/diagrama_clases_UML.png)
+![Project UML Diagram](./doc/diagrama_clases_UML.png)
 
 **[⬆ back to top](#tabla-de-contenidos)**
 

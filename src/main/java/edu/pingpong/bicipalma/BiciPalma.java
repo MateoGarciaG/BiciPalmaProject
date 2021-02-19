@@ -24,7 +24,6 @@ public class BiciPalma
 		 */
 
 		System.out.println("\n **** caso TEST visualizar estado de la estacion **** \n");
-
 		estacion.consultarEstacion();
 
 		/**

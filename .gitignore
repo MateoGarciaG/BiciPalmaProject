@@ -55,3 +55,14 @@ buildNumber.properties
 ######   Docs    #####
 ######################
 *.ucls
+
+
+##############################
+## IntelliJ
+##############################
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
